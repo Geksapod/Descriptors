@@ -9,29 +9,12 @@ if __name__ == "__main__":
     print(f"{'Task #1':-^60}")
 
     try:
-        car_1 = ro.CarAudi("A4", 2015)
+        car_1 = ro.Car("Audi", "A4", 2015)
         print(car_1)
         print(car_1.make)
         # del car_1.make
         # print(car_1.make)
-        car_1.make = "test"
-        print(car_1.make)
-
-    except AttributeError as error:
-        print(error)
-
-    # Or
-    print()
-
-    try:
-        car_2 = ro.CarBMW("BMW", "3", 2017)
-        print(car_2)
-        print(car_2.make)
-        # del car_2.make
-        # print(car_2.make)
-        car_2.make = "test"
-        # print(car_2.make)
-        # print()
+        car_1.make = "BMW"
 
     except AttributeError as error:
         print(error)
@@ -58,4 +41,3 @@ if __name__ == "__main__":
     test_3 = tp.A("Testing property")
     test_3.prop = "New property"
 
-    help(ro)
